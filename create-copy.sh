@@ -30,6 +30,8 @@ echo "[INFO] Check if test file exists in test directory..."
 if [ -e /tmp/testdir/$FILENAME ]
 then
     echo "[Test Passed] File $FILENAME exists."
+    exit 0;
 else
     echo "[Test Failed] File $FILENAME not exists."
+    exit 1;
 fi
